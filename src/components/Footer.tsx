@@ -2,7 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Logo from "@/assets/logo.svg";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
@@ -32,6 +37,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-3 text-white/70">
             <Link href="#">Web Development</Link>
             <Link href="#">Graphics Desiging</Link>
+            <Link href="#">UX/UI Desiging</Link>
             <Link href="#">Video Editing</Link>
             <Link href="#">SEO & Digital Marketing</Link>
           </div>
@@ -50,6 +56,9 @@ const Footer: React.FC = () => {
               </Link>
               <Link href="#">
                 <FaInstagram />
+              </Link>
+              <Link href="#">
+                <FaWhatsapp />
               </Link>
             </div>
           </div>
