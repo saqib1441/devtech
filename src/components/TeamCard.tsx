@@ -99,7 +99,6 @@ const TeamCard: React.FC = () => {
       modules={[Pagination, Autoplay]}
       loop={true}
       autoplay={{ delay: 5000, pauseOnMouseEnter: true }}
-      className="cursor-pointer select-none mt-10"
       breakpoints={{
         768: {
           slidesPerView: 2,
@@ -114,7 +113,7 @@ const TeamCard: React.FC = () => {
       {data &&
         data.map((team, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-black rounded-3xl flex items-center flex-col py-10 cursor-pointer">
+            <div className="bg-black rounded-3xl flex items-center flex-col py-10 cursor-pointer select-none">
               <Image
                 src={BackgroundOverlay}
                 alt="dev-tech-overlay"
@@ -138,7 +137,7 @@ const TeamCard: React.FC = () => {
                 </h1>
                 <p className="text-white/70 text-sm">{team.skill}</p>
               </div>
-              <div className="text-white flex gap-4">
+              <div className="text-white flex gap-3">
                 <Link href={team.socials.linkedin.url}>
                   {team.socials.linkedin.icon}
                 </Link>

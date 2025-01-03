@@ -22,7 +22,7 @@ const Header: React.FC = () => {
               className="w-60 mx-auto md:w-80 lg:w-[450px] -mt-2"
             />
           </div>
-          <p className="sm:w-[550px]">
+          <p className="sm:w-[550px] text-white/70">
             we help yo grow your business upto 10X with our creative services
             like Web Development , UI UX Designing, Graphic designig, SEO &
             Digital Marketing. Lets brings something amazing!
