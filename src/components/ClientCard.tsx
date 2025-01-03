@@ -80,7 +80,7 @@ const ClientCard: React.FC = () => {
       {data &&
         data.map((review, index) => (
           <SwiperSlide className="text-white" key={index}>
-            <div className="flex flex-col gap-4 bg-primary p-4 rounded-lg w-[320px] mx-auto md:w-auto md:mx-0 sm:w-[500px]">
+            <div className="flex flex-col gap-4 bg-primary py-10 px-5 rounded-3xl w-[320px] mx-auto md:w-auto md:mx-0 sm:w-[500px]">
               <h1 className="font-semibold text-xl sm:text-2xl">
                 {review.project}
               </h1>

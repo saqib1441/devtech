@@ -3,72 +3,11 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
-import Link from "next/link";
-
-import WebDevelopment1 from "@/assets/portfolio/web_development.svg";
-import WebDevelopment2 from "@/assets/portfolio/graphic_design.svg";
-import WebDevelopment3 from "@/assets/portfolio/ui_ux.svg";
-import { IoLink } from "react-icons/io5";
+import PortfolioCard from "./PortfolioCard";
 
 const Portfolio: React.FC = () => {
   const [service, setService] = useState("");
 
-  const webDevelopment = [
-    {
-      imgSrc: WebDevelopment1,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment2,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment3,
-      link: "",
-    },
-  ];
-  const ui = [
-    {
-      imgSrc: WebDevelopment1,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment2,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment3,
-      link: "",
-    },
-  ];
-  const graphics = [
-    {
-      imgSrc: WebDevelopment1,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment2,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment3,
-      link: "",
-    },
-  ];
-  const marketing = [
-    {
-      imgSrc: WebDevelopment1,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment2,
-      link: "",
-    },
-    {
-      imgSrc: WebDevelopment3,
-      link: "",
-    },
-  ];
   return (
     <section className="bg-black py-20 relative">
       <Image
@@ -93,7 +32,7 @@ const Portfolio: React.FC = () => {
           <select
             value={service || ""}
             onChange={(e) => setService(e.target.value)}
-            className="bg-primary px-5 py-2 rounded-full w-fit focus:outline-none cursor-pointer"
+            className="bg-main px-5 py-2 rounded-full w-fit focus:outline-none cursor-pointer text-center"
           >
             <option value=""> -- Select Service -- </option>
             <option value="web">Web Development</option>
@@ -102,93 +41,7 @@ const Portfolio: React.FC = () => {
             <option value="marketing">Digital Marketing</option>
           </select>
         </div>
-        <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          {service === "" ||
-          (service === "web" && webDevelopment && webDevelopment.length > 0) ? (
-            webDevelopment.map((value, index) => (
-              <div
-                key={index}
-                className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
-              >
-                <Image
-                  src={value.imgSrc}
-                  alt={`dev-tech-${service || "default"}`}
-                  className="w-full"
-                />
-                <div className="absolute w-full h-full top-0 rounded-lg flex items-center justify-center group-hover:bg-primary/50 transition-all duration-300">
-                  <Link
-                    href={value.link}
-                    className="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300"
-                  >
-                    <IoLink />
-                  </Link>
-                </div>
-              </div>
-            ))
-          ) : service === "ui" && ui && ui.length > 0 ? (
-            ui.map((value, index) => (
-              <div
-                key={index}
-                className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
-              >
-                <Image
-                  src={value.imgSrc}
-                  alt={`dev-tech-${service || "default"}`}
-                />
-                <div className="absolute w-full h-full top-0 rounded-lg flex items-center justify-center group-hover:bg-primary/50 transition-all duration-300">
-                  <Link
-                    href={value.link}
-                    className="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300"
-                  >
-                    <IoLink />
-                  </Link>
-                </div>
-              </div>
-            ))
-          ) : service === "graphics" && graphics && graphics.length > 0 ? (
-            graphics.map((value, index) => (
-              <div
-                key={index}
-                className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
-              >
-                <Image
-                  src={value.imgSrc}
-                  alt={`dev-tech-${service || "default"}`}
-                />
-                <div className="absolute w-full h-full top-0 rounded-lg flex items-center justify-center group-hover:bg-primary/50 transition-all duration-300">
-                  <Link
-                    href={value.link}
-                    className="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300"
-                  >
-                    <IoLink />
-                  </Link>
-                </div>
-              </div>
-            ))
-          ) : service === "marketing" && marketing && marketing.length > 0 ? (
-            marketing.map((value, index) => (
-              <div
-                key={index}
-                className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
-              >
-                <Image
-                  src={value.imgSrc}
-                  alt={`dev-tech-${service || "default"}`}
-                />
-                <div className="absolute w-full h-full top-0 rounded-lg flex items-center justify-center group-hover:bg-primary/50 transition-all duration-300">
-                  <Link
-                    href={value.link}
-                    className="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300"
-                  >
-                    <IoLink />
-                  </Link>
-                </div>
-              </div>
-            ))
-          ) : (
-            <p>No record found</p>
-          )}
-        </div>
+        <PortfolioCard service={service} />
       </div>
     </section>
   );
