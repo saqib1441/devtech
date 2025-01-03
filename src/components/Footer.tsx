@@ -30,6 +30,7 @@ const Footer: React.FC = () => {
             <Link href="#">About Us</Link>
             <Link href="#">Our Services</Link>
             <Link href="#">Our Works</Link>
+            <Link href="#">Our Team</Link>
           </div>
         </div>
         <div className="flex flex-col gap-5 items-center text-center">
