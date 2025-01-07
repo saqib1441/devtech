@@ -8,10 +8,21 @@ import {
   FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa6";
+import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer className="relative bg-black">
+      <Image
+        src={BackgroundOverlay}
+        alt="dev-tech-overlay"
+        className="absolute top-0 left-0 w-[200px] opacity-50"
+      />
+      <Image
+        src={BackgroundOverlay}
+        alt="dev-tech-overlay"
+        className="absolute bottom-0 right-0 rotate-180 w-[200px]"
+      />
       <div className="py-20 wrapper text-white grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <div className="flex flex-col items-center text-center gap-5 xl:col-span-2 xl:text-left xl:items-start">
           <div>

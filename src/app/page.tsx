@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Portfolio from "@/components/Portfolio";
+import Services from "@/components/Services";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 
@@ -12,8 +13,9 @@ const Home = () => {
       <Navbar />
       <Header />
       <AboutUs />
-      <Portfolio />
+      <Services />
       <Team />
+      <Portfolio />
       <Testimonials />
       <Footer />
     </main>

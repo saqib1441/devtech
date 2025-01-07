@@ -5,34 +5,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import AhmadNadeem from "@/assets/teams/ahmad_nadeem.svg";
-import AdeelAbbas from "@/assets/teams/adeel_abbas.svg";
-import SaqibAli from "@/assets/teams/saqib_ali.svg";
+import AhmadNadeem from "@/assets/teams/ahmad_nadeem.png";
+import AdeelAbbas from "@/assets/teams/adeel_abbas.png";
+import SaqibAli from "@/assets/teams/saqib_ali.png";
+import AmeerHamza from "@/assets/teams/ameer_hamza.png";
+import KingsleyToochi from "@/assets/teams/kingsley_toochi.png";
+import MTahir from "@/assets/teams/m_tahir.png";
+import MWaqas from "@/assets/teams/m_waqas.png";
 import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const TeamCard: React.FC = () => {
   const data = [
-    {
-      name: "Ahmad Nadeem",
-      imgSrc: AhmadNadeem,
-      skill: "Founder, CEO",
-      socials: {
-        linkedin: {
-          icon: <FaLinkedin />,
-          url: "",
-        },
-        facebook: {
-          icon: <FaFacebookF />,
-          url: "",
-        },
-        instagram: {
-          icon: <FaInstagram />,
-          url: "",
-        },
-      },
-    },
     {
       name: "Ahmad Nadeem",
       imgSrc: AhmadNadeem,
@@ -90,6 +75,82 @@ const TeamCard: React.FC = () => {
         },
       },
     },
+    {
+      name: "Ameer Hamza",
+      imgSrc: AmeerHamza,
+      skill: "Wordpress & SEO Expert",
+      socials: {
+        linkedin: {
+          icon: <FaLinkedin />,
+          url: "",
+        },
+        facebook: {
+          icon: <FaFacebookF />,
+          url: "",
+        },
+        instagram: {
+          icon: <FaInstagram />,
+          url: "",
+        },
+      },
+    },
+    {
+      name: "Kingsley Toochi",
+      imgSrc: KingsleyToochi,
+      skill: "Web Developer",
+      socials: {
+        linkedin: {
+          icon: <FaLinkedin />,
+          url: "",
+        },
+        facebook: {
+          icon: <FaFacebookF />,
+          url: "",
+        },
+        instagram: {
+          icon: <FaInstagram />,
+          url: "",
+        },
+      },
+    },
+    {
+      name: "M Tahir",
+      imgSrc: MTahir,
+      skill: "Digital Marketer",
+      socials: {
+        linkedin: {
+          icon: <FaLinkedin />,
+          url: "",
+        },
+        facebook: {
+          icon: <FaFacebookF />,
+          url: "",
+        },
+        instagram: {
+          icon: <FaInstagram />,
+          url: "",
+        },
+      },
+    },
+    {
+      name: "M Waqas",
+      imgSrc: MWaqas,
+      skill: "Graphic Designer",
+      socials: {
+        linkedin: {
+          icon: <FaLinkedin />,
+          url: "",
+        },
+        facebook: {
+          icon: <FaFacebookF />,
+          url: "",
+        },
+        instagram: {
+          icon: <FaInstagram />,
+          url: "",
+        },
+      },
+    },
   ];
   return (
     <Swiper
@@ -113,7 +174,7 @@ const TeamCard: React.FC = () => {
       {data &&
         data.map((team, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-black rounded-3xl flex items-center flex-col py-10 cursor-pointer select-none">
+            <div className="bg-black rounded-3xl flex items-center flex-col py-12 cursor-pointer select-none">
               <Image
                 src={BackgroundOverlay}
                 alt="dev-tech-overlay"

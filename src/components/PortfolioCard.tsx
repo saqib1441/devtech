@@ -8,6 +8,14 @@ import WebDevelopment3 from "@/assets/portfolio/ui_ux.svg";
 import { IoLink } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
+import UX1 from "@/assets/portfolio/ux/1.png";
+import UX2 from "@/assets/portfolio/ux/2.png";
+import UX3 from "@/assets/portfolio/ux/3.png";
+import UX4 from "@/assets/portfolio/ux/4.png";
+import UX5 from "@/assets/portfolio/ux/5.png";
+import UX6 from "@/assets/portfolio/ux/6.png";
+import UX7 from "@/assets/portfolio/ux/7.png";
+import UX8 from "@/assets/portfolio/ux/8.png";
 
 interface PortfolioCardProps {
   service: string;
@@ -38,15 +46,35 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
   ];
   const ui = [
     {
-      imgSrc: WebDevelopment1,
+      imgSrc: UX1,
       link: "",
     },
     {
-      imgSrc: WebDevelopment2,
+      imgSrc: UX2,
       link: "",
     },
     {
-      imgSrc: WebDevelopment3,
+      imgSrc: UX3,
+      link: "",
+    },
+    {
+      imgSrc: UX4,
+      link: "",
+    },
+    {
+      imgSrc: UX5,
+      link: "",
+    },
+    {
+      imgSrc: UX6,
+      link: "",
+    },
+    {
+      imgSrc: UX7,
+      link: "",
+    },
+    {
+      imgSrc: UX8,
       link: "",
     },
   ];
@@ -103,7 +131,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         webDevelopment.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
           >
             <Image
               src={value.imgSrc}
@@ -124,7 +152,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         ui.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
           >
             <Image
               src={value.imgSrc}
@@ -144,7 +172,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         graphics.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
           >
             <Image
               src={value.imgSrc}
@@ -164,7 +192,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         marketing.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
           >
             <Image
               src={value.imgSrc}

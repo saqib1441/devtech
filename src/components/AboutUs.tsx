@@ -32,13 +32,13 @@ const AboutUs: React.FC = () => {
               <span className="text-main inline-block mt-1 xl:mt-0">
                 <FaCheck />
               </span>
-              <p>Creating visually appealing and user-friendly interfaces.</p>
+              <p>Creating visually appealing and engaging ideas.</p>
             </div>
             <div className="flex gap-2 xl:items-center">
               <span className="text-main inline-block mt-1 xl:mt-0">
                 <FaCheck />
               </span>
-              <p>Creating visually appealing and user-friendly interfaces.</p>
+              <p>Seamless web and app engineering to empower you business.</p>
             </div>
             <div className="flex gap-2 xl:items-center">
               <span className="text-main inline-block mt-1 xl:mt-0">

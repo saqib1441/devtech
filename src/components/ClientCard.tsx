@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import Review1 from "@/assets/testimonials/client1.svg";
+import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
 
 const ClientCard: React.FC = () => {
   const data = [
@@ -79,8 +80,18 @@ const ClientCard: React.FC = () => {
     >
       {data &&
         data.map((review, index) => (
-          <SwiperSlide className="text-white" key={index}>
-            <div className="flex flex-col gap-2 bg-primary py-10 px-5 rounded-3xl w-[320px] mx-auto md:w-auto md:mx-0 sm:w-[500px]">
+          <SwiperSlide className="text-white relative" key={index}>
+            <Image
+              src={BackgroundOverlay}
+              alt="dev-tech-overlay"
+              className="absolute top-0 left-0 w-[200px] opacity-50"
+            />
+            <Image
+              src={BackgroundOverlay}
+              alt="dev-tech-overlay"
+              className="absolute bottom-0 right-0 rotate-180 w-[200px]"
+            />
+            <div className="flex flex-col gap-2 bg-black py-10 px-5 rounded-3xl w-[320px] mx-auto md:w-auto md:mx-0 sm:w-[500px]">
               <h1 className="font-semibold text-xl sm:text-2xl">
                 {review.project}
               </h1>
