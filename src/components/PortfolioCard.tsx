@@ -126,12 +126,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         },
       }}
     >
-      {service === "" ||
-      (service === "web" && webDevelopment && webDevelopment.length > 0) ? (
+      {service === "web" && webDevelopment && webDevelopment.length > 0 ? (
         webDevelopment.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-2xl"
           >
             <Image
               src={value.imgSrc}
@@ -148,11 +147,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
             </div>
           </SwiperSlide>
         ))
-      ) : service === "ui" && ui && ui.length > 0 ? (
+      ) : service === "" || (service === "ui" && ui && ui.length > 0) ? (
         ui.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-2xl"
           >
             <Image
               src={value.imgSrc}
@@ -172,7 +171,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         graphics.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-2xl"
           >
             <Image
               src={value.imgSrc}
@@ -192,7 +191,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
         marketing.map((value, index) => (
           <SwiperSlide
             key={index}
-            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-md"
+            className="w-[320px] mx-auto relative group overflow-hidden cursor-pointer sm:w-auto sm:mx-0 rounded-2xl"
           >
             <Image
               src={value.imgSrc}

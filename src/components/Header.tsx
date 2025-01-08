@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           </span>
         </div>
         <div className="text-white grid gap-10 mt-5 md:grid-cols-2 place-items-center lg:grid-cols-3">
-          <div className="border-2 border-main px-5 py-10 bg-primary rounded-3xl sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
+          <div className="border-2 border-main px-5 py-10 bg-primary rounded-2xl sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
             <div
               className={`bg-main p-5 rounded-full h-[70px] w-[70px] flex items-center justify-center`}
             >
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
               foster innovation through technology-driven tools and platforms.
             </p>
           </div>
-          <div className="border-2 border-main px-5 py-10 rounded-3xl bg-main sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
+          <div className="border-2 border-main px-5 py-10 rounded-2xl bg-main sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
             <div
               className={`bg-white p-5 rounded-full h-[70px] w-[70px] flex items-center justify-center text-main`}
             >
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               workflow.
             </p>
           </div>
-          <div className="border-2 border-main px-5 py-10 bg-primary rounded-3xl sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
+          <div className="border-2 border-main px-5 py-10 bg-primary rounded-2xl sm:w-[450px] md:w-auto cursor-pointer sm:hover:scale-105 transition-all duration-300">
             <div
               className={`bg-main p-5 rounded-full h-[70px] w-[70px] flex items-center justify-center`}
             >

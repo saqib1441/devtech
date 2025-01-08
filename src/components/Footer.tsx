@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col gap-3 text-white/70">
             <Link href="#">+92346-7890654</Link>
             <Link href="#">officials.devtech@gmail.com</Link>
-            <div className="text-white flex gap-3 items-center justify-center">
+            <div className="text-white flex gap-3 items-center justify-center text-lg">
               <Link href="#">
                 <FaLinkedin />
               </Link>

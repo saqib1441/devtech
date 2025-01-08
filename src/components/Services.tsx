@@ -1,6 +1,7 @@
 import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
 import Image from "next/image";
 import React from "react";
+import ServicesCard from "./ServicesCard";
 
 const Services: React.FC = () => {
   return (
@@ -19,10 +20,11 @@ const Services: React.FC = () => {
         <div className="text-white text-center mb-10 sm:text-left">
           <h1 className="font-semibold text-2xl">Our Services</h1>
           <p className="text-white/70">
-            Our diverse team of passionate individuals is united by a common
-            goal
+            Smart solutions, expert help, custom plans, and quality services for
+            growth.
           </p>
         </div>
+        <ServicesCard />
       </div>
     </section>
   );
