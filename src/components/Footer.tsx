@@ -2,12 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "@/assets/logo.svg";
 import Image from "next/image";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
