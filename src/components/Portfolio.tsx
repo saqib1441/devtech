@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
   const [service, setService] = useState("");
 
   return (
-    <section className="bg-black py-20 relative">
+    <section className="bg-black py-20 relative" id="portfolio">
       <Image
         src={BackgroundOverlay}
         alt="dev-tech-overlay"

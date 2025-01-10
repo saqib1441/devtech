@@ -21,19 +21,19 @@ const TeamCard: React.FC = () => {
     {
       name: "Ahmad Nadeem",
       imgSrc: AhmadNadeem,
-      skill: "Founder, CEO",
+      skill: "UX/UI Designer",
       socials: {
         linkedin: {
           icon: <FaLinkedin />,
-          url: "",
+          url: "https://www.linkedin.com/in/ahmad-nadeem-4703822b8/",
         },
         facebook: {
           icon: <FaFacebookF />,
-          url: "",
+          url: "https://www.facebook.com/share/15qNsxNA7S/",
         },
         instagram: {
           icon: <FaInstagram />,
-          url: "",
+          url: "https://www.instagram.com/ahmadcreations12?igsh=MWN0NTN2Zm1sN3pzeQ==",
         },
       },
     },
@@ -63,15 +63,15 @@ const TeamCard: React.FC = () => {
       socials: {
         linkedin: {
           icon: <FaLinkedin />,
-          url: "",
+          url: "https://www.linkedin.com/in/m-saqib-ali",
         },
         facebook: {
           icon: <FaFacebookF />,
-          url: "",
+          url: "https://www.facebook.com/msaqib.ali.31392",
         },
         instagram: {
           icon: <FaInstagram />,
-          url: "",
+          url: "https://www.instagram.com/saqib_ali_ig/profilecard/?igsh=d2hrYm4yNjM1MXZy",
         },
       },
     },
@@ -82,15 +82,15 @@ const TeamCard: React.FC = () => {
       socials: {
         linkedin: {
           icon: <FaLinkedin />,
-          url: "",
+          url: "https://www.linkedin.com/in/ameer-hamza-00bb1b25b/",
         },
         facebook: {
           icon: <FaFacebookF />,
-          url: "",
+          url: "https://www.facebook.com/profile.php?id=100068414261088",
         },
         instagram: {
           icon: <FaInstagram />,
-          url: "",
+          url: "https://www.instagram.com/itzhamza714/profilecard/?igsh=c2R6emh1NXU5bmF5",
         },
       },
     },
@@ -120,15 +120,15 @@ const TeamCard: React.FC = () => {
       socials: {
         linkedin: {
           icon: <FaLinkedin />,
-          url: "",
+          url: "https://www.linkedin.com/in/muhammad-tahir-940713318",
         },
         facebook: {
           icon: <FaFacebookF />,
-          url: "",
+          url: "https://www.facebook.com/ysmarketingexpert?mibextid=ZbWKwL",
         },
         instagram: {
           icon: <FaInstagram />,
-          url: "",
+          url: "https://www.instagram.com/ysmarketing_agency/profilecard/?igsh=MWxxanpmaWJvbWdmbg==",
         },
       },
     },
@@ -198,14 +198,14 @@ const TeamCard: React.FC = () => {
                 </h1>
                 <p className="text-white/70 text-sm">{team.skill}</p>
               </div>
-              <div className="text-white flex gap-3">
-                <Link href={team.socials.linkedin.url}>
+              <div className="text-white flex gap-3 z-10 relative">
+                <Link href={team.socials.linkedin.url} target="_blank">
                   {team.socials.linkedin.icon}
                 </Link>
-                <Link href={team.socials.facebook.url}>
+                <Link href={team.socials.facebook.url} target="_blank">
                   {team.socials.facebook.icon}
                 </Link>
-                <Link href={team.socials.instagram.url}>
+                <Link href={team.socials.instagram.url} target="_blank">
                   {team.socials.instagram.icon}
                 </Link>
               </div>

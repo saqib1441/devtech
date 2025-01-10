@@ -45,43 +45,43 @@ const Navbar: React.FC = () => {
             <FaXmark />
           </span>
           <Link
-            href="/"
+            href="#"
             onClick={navHandler}
             className="hover:text-main transition-all duration-300"
           >
             Home
           </Link>
           <Link
-            href="/"
+            href="#about"
             onClick={navHandler}
             className="hover:text-main transition-all duration-300"
           >
             About
           </Link>
           <Link
-            href="/"
+            href="#services"
             onClick={navHandler}
             className="hover:text-main transition-all duration-300"
           >
             Services
           </Link>
           <Link
-            href="/"
+            href="#team"
             onClick={navHandler}
             className="hover:text-main transition-all duration-300"
           >
             Team
           </Link>
           <Link
-            href="/"
+            href="#portfolio"
             onClick={navHandler}
             className="hover:text-main transition-all duration-300"
           >
             Portfolio
           </Link>
           <Link
-            href="/"
-            className="bg-main text-white px-4 py-2 rounded-full flex items-center gap-1 border-2 border-transparent hover:bg-transparent transition-all duration-300 hover:border-main"
+            href="#contact"
+            className="bg-main text-white px-4 py-2 rounded-full flex items-center gap-1"
             onClick={navHandler}
           >
             <span>Contact Us</span>

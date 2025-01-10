@@ -16,37 +16,37 @@ const ServicesCard: React.FC = () => {
       title: "Web Development",
       icon: <FaLaptopCode />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Expert web development services crafting responsive, fast, and custom websites to enhance your online presence and drive business growth.",
     },
     {
       title: "Graphic Designing",
       icon: <AiFillPicture />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Creative graphic design services delivering unique, eye-catching visuals for branding, marketing, and digital platforms",
     },
     {
       title: "UX/UI Designing",
       icon: <FaFigma />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Professional UI/UX design services creating intuitive, user-friendly interfaces and seamless experiences to enhance engagement",
     },
     {
       title: "Video Editing",
       icon: <FaPhotoVideo />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Expert video editing services delivering high-quality, engaging content with smooth transitions, effects, and professional touches.",
     },
     {
       title: "Digital Marketing",
       icon: <FaChartBar />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Result-driven digital marketing services offering SEO, social media, PPC, and content strategies to boost online visibility and drive growth.",
     },
     {
       title: "SEO",
       icon: <TbSeo />,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tempus arcu, at consectetur lectus. Sed in neque sed urna facilisis auctor.",
+        "Boost your digital marketing success with expert SEO services, enhancing search rankings, driving organic traffic, and maximizing online visibility.",
     },
   ];
 
@@ -72,7 +72,7 @@ const ServicesCard: React.FC = () => {
       {data &&
         data.map((service, index) => (
           <SwiperSlide key={index}>
-            <div className="px-5 py-10 bg-primary rounded-2xl sm:w-[450px] md:w-auto cursor-pointer">
+            <div className="px-5 py-10 bg-primary rounded-2xl sm:w-[450px] md:w-auto cursor-pointer mx-auto md:mx-0">
               <div
                 className={`bg-main p-4 rounded-full h-[70px] w-[70px] flex items-center justify-center text-5xl`}
               >
@@ -80,7 +80,7 @@ const ServicesCard: React.FC = () => {
               </div>
               <h1 className="font-[500] mt-3 mb-2 text-lg">{service.title}</h1>
               <p className="text-white/70 mb-2">{service.description}</p>
-              <Link href={"/"} className="text-main">
+              <Link href={"#contact"} className="text-main">
                 Learn More
               </Link>
             </div>

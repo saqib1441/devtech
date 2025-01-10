@@ -3,7 +3,7 @@ import TeamCard from "./TeamCard";
 
 const Team: React.FC = () => {
   return (
-    <section>
+    <section id="team">
       <div className="wrapper py-20">
         <div className="text-white text-center mb-10 sm:text-left">
           <h1 className="font-semibold text-2xl">Team Behind Our Success</h1>

@@ -25,85 +25,85 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ service }) => {
   const webDevelopment = [
     {
       imgSrc: WebDevelopment1,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment2,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment3,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment3,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment3,
-      link: "",
+      link: "#contact",
     },
   ];
   const ui = [
     {
       imgSrc: UX1,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX2,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX3,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX4,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX5,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX6,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX7,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: UX8,
-      link: "",
+      link: "#contact",
     },
   ];
   const graphics = [
     {
       imgSrc: WebDevelopment1,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment2,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment3,
-      link: "",
+      link: "#contact",
     },
   ];
   const marketing = [
     {
       imgSrc: WebDevelopment1,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment2,
-      link: "",
+      link: "#contact",
     },
     {
       imgSrc: WebDevelopment3,
-      link: "",
+      link: "#contact",
     },
   ];
   return (

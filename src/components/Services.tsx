@@ -5,7 +5,7 @@ import ServicesCard from "./ServicesCard";
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-black py-20 relative">
+    <section className="bg-black py-20 relative" id="services">
       <Image
         src={BackgroundOverlay}
         alt="dev-tech-overlay"

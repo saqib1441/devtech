@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const AboutUs: React.FC = () => {
   return (
-    <section className="py-20">
+    <section className="py-20" id="about">
       <div className="wrapper text-white flex flex-col gap-10 md:flex-row md:items-center">
         <div className="md:w-[50%]">
           <Image
@@ -52,12 +52,12 @@ const AboutUs: React.FC = () => {
           </div>
           <div className="flex items-center gap-5">
             <Link
-              href="/"
+              href="#contact"
               className="border-2 border-main px-5 py-2 rounded-full"
             >
               Contact Us
             </Link>
-            <Link href="/" className="bg-main px-5 py-2 rounded-full">
+            <Link href="#portfolio" className="bg-main px-5 py-2 rounded-full">
               Portfolio
             </Link>
           </div>

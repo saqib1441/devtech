@@ -4,58 +4,63 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import Review1 from "@/assets/testimonials/client1.svg";
 import BackgroundOverlay from "@/assets/overlays/background_overlay.svg";
+import Review1 from "@/assets/testimonials/client1.svg";
+import Review2 from "@/assets/testimonials/client2.svg";
+import Review3 from "@/assets/testimonials/client3.svg";
+import Review4 from "@/assets/testimonials/client4.svg";
+import Review5 from "@/assets/testimonials/client5.svg";
+import Review6 from "@/assets/testimonials/client6.svg";
 
 const ClientCard: React.FC = () => {
   const data = [
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
+      name: "Sarah Miller",
+      designation: "Marketing Director at GlobalTech",
       imgSrc: Review1,
-      project: "Full Stack Development",
+      project: "Web Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "The web development team transformed our online presence! Their attention to detail and understanding of our brand vision were remarkable.",
     },
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
-      imgSrc: Review1,
-      project: "Full Stack Development",
+      name: "James Lee",
+      designation: "Product Manager at Innovatech",
+      imgSrc: Review2,
+      project: "UX/UI Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "Their UI/UX design completely revamped the user experience for our app. It's intuitive, sleek, and aligns perfectly with our customer needs. Truly a game-changer!",
     },
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
-      imgSrc: Review1,
-      project: "Full Stack Development",
+      name: "Emily Roberts",
+      designation: "Founder of EcoLiving Co.",
+      imgSrc: Review3,
+      project: "SEO",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "Thanks to their expert SEO strategies, we've seen a dramatic increase in organic traffic. Our rankings on Google have never been better!",
     },
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
-      imgSrc: Review1,
-      project: "Full Stack Development",
+      name: "David Harris",
+      designation: "Creative Director at Luxe Apparel",
+      imgSrc: Review4,
+      project: "Graphic Design",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "The graphic design team delivered visuals that perfectly captured our brand's essence. Their creativity and professionalism are unparalleled.",
     },
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
-      imgSrc: Review1,
-      project: "Full Stack Development",
+      name: "Michael Chang",
+      designation: "Sales Manager at TechnoFlex",
+      imgSrc: Review5,
+      project: "Digital Marketing",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "The digital marketing campaign they created for us was outstanding. Our sales have significantly improved, and the return on investment was exceptional!",
     },
     {
-      name: "Lauren Turner",
-      designation: "VP, BlueWave",
-      imgSrc: Review1,
-      project: "Full Stack Development",
+      name: "Jessica Martinez",
+      designation: "Content Manager at BrightIdeas",
+      imgSrc: Review6,
+      project: "Video Editing",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit ea similique maiores! Quae, saepe nostrum quia eos impedit culpa asperiores laboriosam maxime tempora provident eaque temporibus ducimus rem soluta.",
+        "The video editing team exceeded our expectations. They crafted a beautiful video that told our story and engaged our audience like never before",
     },
   ];
   return (
@@ -97,7 +102,7 @@ const ClientCard: React.FC = () => {
               </h1>
               <p className="text-white/70 text-sm">{review.description}</p>
               <div className="flex gap-4 items-center mt-2">
-                <div>
+                <div className="bg-main rounded-full">
                   <Image
                     src={review.imgSrc}
                     alt={`dev-tech-${review.project.toLocaleLowerCase()}-review`}
