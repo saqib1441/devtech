@@ -53,16 +53,13 @@ const Footer: React.FC = () => {
               officials.devtech@gmail.com
             </Link>
             <div className="text-white flex gap-3 items-center justify-center text-lg">
-              <Link href="#">
-                <FaLinkedin />
-              </Link>
-              <Link href="#">
+              <Link href="https://web.facebook.com/profile.php?id=61570881484652">
                 <FaFacebook />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/officials.devtech/">
                 <FaInstagram />
               </Link>
-              <Link href="#">
+              <Link href="https://wa.me/+923467890654">
                 <FaWhatsapp />
               </Link>
             </div>
